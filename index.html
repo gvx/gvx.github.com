@@ -1,32 +1,64 @@
-<html>
-<head>
-<title>gvx on GitHub</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>gvx' Userpage at GitHub</title>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-var limit = 10 // how many repos to list
+var limit = 20 // how many repos to list
 var login = 'gvx' // your username
-
 $.getJSON('http://github.com/api/v1/json/' + login + '?callback=?', function(data) {
-  var repos = $.grep(data.user.repositories, function() {
-    return !this.fork
-  })
-
-  repos.sort(function(a, b) {
-    return b.watchers - a.watchers
-  })
-
-  $.each(repos.slice(0, limit), function() {
-    $('#repos').append('<li><a href="' + this.url + '">' + this.name + '</a></li>')
-  })
+var repos = $.grep(data.user.repositories, function() {
+return !this.fork
+})
+repos.sort(function(a, b) {
+return b.watchers - a.watchers
+})
+$.each(repos.slice(0, limit), function() {
+$('#repos').append('<li><a class="gh" href="' + this.url + '">' + this.name + '</a></li>')
+})
 })
 })
 </script>
+<style type="text/css">
+strong.title {
+font-size: xx-large;
+}
+em.title {
+font-size: small;
+}
+p.footnotes {
+font-size: small;
+}
+a.footnotelink {
+font-size: small;
+}
+a.gh {
+color: #444466;
+text-decoration: none;
+}
+a.gh:hover {text-decoration: underline;}
+p {
+font-size: small;
+}
+#container {
+margin: 0 auto;
+width: 600px;
+}
+</style>
 </head>
 <body>
-<h2>gvx GitHub Userpage</h2>
-<h3>Repositories</h3>
+<p class="links"><b>gvx
+user page</b> (<a href="http://github.com/gvx/">GitHub</a>)
+| <a href="http://gvx.github.com/spaceflight2d/">SpaceFlight2D</a>
+(<a href="http://github.com/gvx/spaceflight2d/">GitHub</a>)
+| <a href="http://gvx.github.com/openlife/">OpenLife</a>
+(<a href="http://github.com/gvx/openlife/">GitHub</a>)</p>
+<div id="container">
+<p><strong class="title">gvx Userpage</strong>
+<em class="title">the official gvx user page.</em></p>
+<p>Some projects of mine are:</p>
+
 <ul id="repos">
 </ul>
-</body>
-</html>
+</div>
+</body></html>
