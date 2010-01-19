@@ -1,3 +1,7 @@
+body
+{
+	background-color: /*#6f6f6f;/*/ #6c6c77; /**/
+}
 strong.title
 {
 	font-size: xx-large;
@@ -13,29 +17,79 @@ p.footnotes
 	font-size: x-small;
 }
 
-a.footnotelink
+a
 {
-	font-size: x-small;
+	color: #0000aa;
+}
+
+a:hover
+{
 	text-decoration: none;
 }
 
-a.gh
+a:visited
 {
-	color: #444466;
-}
-
-a.gh:hover
-{
-	text-decoration: none;
+	color: #000055;
 }
 
 p.links
 {
 	font-size: small;
+	background-color: /* #9f9f9f; I like this, but it is too dark */  #cfcfcf;
+	                  /* which causes people to miss the header   */
+	padding: 10px;
+	-moz-border-radius: 10px;
+}
+
+p.links a
+{
+	font-weight: bold;
+	color: #00af00;
+}
+
+a.larger
+{
+	font-size: x-large;
+}
+
+a.large
+{
+	font-size: large;
+}
+
+p.links a:visited
+{
+	color: #00af00;
+}
+
+p.footer
+{
+	font-size: small;
+	background-color: #9f9f9f;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	text-align: center;
+	margin: 20 auto;
+	width: 35em;
+}
+
+ul
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0px;
+}
+
+li{
+	display: inline;
+	margin: 5px;
 }
 
 #container
 {
 	margin: 0 auto;
+	padding: 20px;
+	-moz-border-radius: 20px;
 	width: 600px;
+	background-color: #ffffff;
 }
