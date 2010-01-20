@@ -1,6 +1,6 @@
 body
 {
-	background-color: /*#6f6f6f;/*/ #6c6c77; /**/
+	background-color: #202050;
 	color: #000040
 }
 
@@ -41,6 +41,7 @@ p.links
 	                  /* which causes people to miss the header   */
 	padding: 10px;
 	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
 }
 
 p.links a
@@ -54,7 +55,8 @@ p.footer
 	font-size: small;
 	background-color: #9f9f9f;
 	padding: 10px;
-	-moz-border-radius: 10px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 20px;
 	text-align: center;
 	margin: 20 auto;
 	width: 35em;
@@ -63,8 +65,29 @@ p.footer
 #container
 {
 	margin: 0 auto;
-	padding: 20px;
-	-moz-border-radius: 20px;
+	padding: 20px 20px 1px 20px;
+	-moz-border-radius: 20px 20px 7px 7px;
+	-webkit-border-radius: 20px 20px 7px 7px;
+	width: 500px;
+	background-color: #ffffd8;
+}
+
+#containermid
+{
+	margin: 4px auto;
+	padding: 1px 20px 1px 20px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	width: 500px;
+	background-color: #ffffd8;
+}
+
+#container2
+{
+	margin: 4px auto;
+	padding: 1px 20px 20px 20px;
+	-moz-border-radius: 7px 7px 20px 20px;
+	-webkit-border-radius: 7px 7px 20px 20px;
 	width: 500px;
 	background-color: #ffffd8;
 }
