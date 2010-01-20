@@ -3,23 +3,22 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-var limit = 20 // how many repos to list
-var login = 'gvx' // your username
-$.getJSON('http://github.com/api/v1/json/' + login + '?callback=?', function(data) {
+var limit = 12 // how many repos to list
+$.getJSON('http://github.com/api/v1/json/gvx?callback=?', function(data) {
 var repos = $.grep(data.user.repositories, function() {
 return !this.fork
 })
 repos.sort(function(a, b) {
+if (a.name == 'gvx.github.com') {
+return 1
+} else if (b.name == 'gvx.github.com') {
+return -1
+} else {
 return b.watchers - a.watchers
+}
 })
 $.each(repos.slice(0, limit), function() {
-if (this.watchers > 10) {
-$('#repos').append('<li><a class="larger" href="' + this.url + '">2' + this.name + '</a></li>')
-} else if (this.watchers > 1) { 
-$('#repos').append('<li><a class="large" href="' + this.url + '">' + this.name + '</a></li>')
-} else {
-$('#repos').append('<li><a href="' + this.url + '">' + this.name + '</a></li>')
-}
+$('#repos').append('<span class="repo"><a href="' + this.url + '">' + this.name + '</a></span>')
 })
 })
 })
@@ -34,8 +33,8 @@ $('#repos').append('<li><a href="' + this.url + '">' + this.name + '</a></li>')
 <p><strong class="title">gvx Userpage</strong>
 <em class="title">you are here. &rarr; &times;</em></p>
 <p>I have a few <a href="http://gist.github.com/gvx">Gists</a>, but most of them are very old. More interesting are the Git repositories I have on GitHub, of which some are listed below:</p>
-<ul id="repos">
-</ul>
+<div id="repos">
 </div>
-<p class="footer">&copy; 2009,2010 Robin Wellner. Some rights reserved.</p>
+</div>
+<p class="footer">&copy; 2009,2010 <a href="mailto:gyvox.public@gmail.com">Robin Wellner</a>. Some rights reserved.</p>
 </body></html>

@@ -1,7 +1,9 @@
 body
 {
 	background-color: /*#6f6f6f;/*/ #6c6c77; /**/
+	color: #000040
 }
+
 strong.title
 {
 	font-size: xx-large;
@@ -38,27 +40,12 @@ p.links
 	background-color: /* #9f9f9f; I like this, but it is too dark */  #cfcfcf;
 	                  /* which causes people to miss the header   */
 	padding: 10px;
-	-moz-border-radius: 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
 }
 
 p.links a
 {
 	font-weight: bold;
-	color: #00af00;
-}
-
-a.larger
-{
-	font-size: x-large;
-}
-
-a.large
-{
-	font-size: large;
-}
-
-p.links a:visited
-{
 	color: #00af00;
 }
 
@@ -73,23 +60,23 @@ p.footer
 	width: 35em;
 }
 
-ul
-{
-	list-style-type: none;
-	display: inline;
-	margin: 0px;
-}
-
-li{
-	display: inline;
-	margin: 5px;
-}
-
 #container
 {
 	margin: 0 auto;
 	padding: 20px;
 	-moz-border-radius: 20px;
-	width: 600px;
-	background-color: #ffffff;
+	width: 500px;
+	background-color: #ffffd8;
+}
+
+.repo
+{
+	margin-right: 6px;
+	margin-top: 4px;
+	float: left;
+}
+
+#repos
+{
+	height: 4em;
 }
