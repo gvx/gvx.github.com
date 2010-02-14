@@ -1,7 +1,7 @@
 body
 {
 	background-color: #202050;
-	color: #000040
+	color: #000040;
 }
 
 strong.title
@@ -12,6 +12,43 @@ strong.title
 em.title
 {
 	font-size: small;
+}
+
+h1
+{
+	font-size: x-large;
+	font-family: monospace;
+	padding-top: 2em;
+	margin-left: -.8em;
+}
+
+h1:before
+{
+	content: '# ';
+}
+
+h1 a
+{
+	color: #000040;
+	text-decoration: none;
+}
+
+h1 a:hover
+{
+	color: #000040;
+	text-decoration: underline;
+}
+
+strong.title a
+{
+	color: #000040;
+	text-decoration: none;
+}
+
+strong.title a:hover
+{
+	color: #000040;
+	text-decoration: underline;
 }
 
 p.footnotes
@@ -66,8 +103,8 @@ p.footer
 {
 	margin: 0 auto;
 	padding: 20px 20px 1px 20px;
-	-moz-border-radius: 20px 20px 7px 7px;
-	-webkit-border-radius: 20px 20px 7px 7px;
+	-moz-border-radius: 20px 20px 4px 4px;
+	-webkit-border-radius: 20px 20px 4px 4px;
 	width: 500px;
 	background-color: #ffffd8;
 }
@@ -76,8 +113,8 @@ p.footer
 {
 	margin: 4px auto;
 	padding: 1px 20px 1px 20px;
-	-moz-border-radius: 7px 7px 7px 7px;
-	-webkit-border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
 	width: 500px;
 	background-color: #ffffd8;
 }
@@ -85,9 +122,9 @@ p.footer
 #container2
 {
 	margin: 4px auto;
-	padding: 1px 20px 20px 20px;
-	-moz-border-radius: 7px 7px 20px 20px;
-	-webkit-border-radius: 7px 7px 20px 20px;
+	padding: 1px 20px 10px 20px;
+	-moz-border-radius: 4px 4px 20px 20px;
+	-webkit-border-radius: 4px 4px 20px 20px;
 	width: 500px;
 	background-color: #ffffd8;
 }
@@ -102,4 +139,20 @@ p.footer
 #repos
 {
 	height: 4em;
+}
+
+.smallcaps
+{
+	font-variant: small-caps;
+}
+
+#sidebar
+{
+	float: right;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	/*width: 100px;*/
+	background-color: #ffffd8;
 }
