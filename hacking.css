@@ -1,0 +1,183 @@
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.nav
+{
+	font-size: small;
+	background-color: /* #9f9f9f; I like this, but it is too dark */  #cfcfcf;
+	                  /* which causes people to miss the header   */
+	padding: 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.nav a
+{
+	font-weight: bold;
+	color: #00af00;
+}
+
+.title
+{
+	font-size: 300%;
+	font-weight: bold;
+}
+
+.subtitle
+{
+	font-size: 130%;
+	font-style: italic;
+	color: #505050;
+}
+
+.project
+{
+	margin: 3em;
+	width: 60%;
+	border-bottom: 1px solid #888888;
+}
+
+.project .name
+{
+	font-size: 2em;
+	font-weight: bold;
+	font-family: monospace;
+	position: relative;
+	left: -1.2em;
+}
+
+.project .name a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.project .name a:hover
+{
+	color: #000000;
+}
+
+.project .name a:target
+{
+	color: #0000ff;
+}
+
+.project .more
+{
+	margin-left: 2em;
+}
+
+.project .more a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #000040;
+}
+
+.project .more a.download
+{
+	background: url(download_up.png) center right no-repeat;
+	padding: 0 13px 0 0;
+}
+.project .more a.download:hover
+{
+	background: url(download.png) center right no-repeat;
+	padding: 0 13px 0 0;
+}
+
+.project .more a.wikipedia
+{
+	background: url(wiki.png) center right no-repeat;
+	padding: 0 13px 0 0;
+}
+
+.project .more a.github
+{
+	background: url(github.png) center right no-repeat;
+	padding: 0 15px 0 0;
+}
+
+.project .more a:hover
+{
+	color: #000080;
+	text-decoration: underline;
+}
+
+.project .status
+{
+	font-size: 28%;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 1px 2px;
+	vertical-align: middle;
+	-moz-box-shadow: 1px 1px 3px #404040;
+	-webkit-box-shadow: 1px 1px 3px #404040;
+	box-shadow: 1px 1px 3px #404040;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.finished
+{
+	background-color: #00e800;
+}
+
+.concept
+{
+	background-color: #a8a8ff;
+}
+
+.hibernated
+{
+	background-color: #dfdf00;
+}
+
+.stuck
+{
+	background-color: #ffdf00;
+}
+
+code
+{
+	background-color: #000000;
+	color: #20ff20;
+	padding: 2px;
+	-moz-box-shadow: 0px 0px 4px #000000;
+	-webkit-box-shadow: 0px 0px 4px #000000;
+	box-shadow: 0px 0px 4px #000000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.copyright
+{
+	font-size: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	padding: 4px;
+	text-align: center;
+	color: #444444;
+	-moz-box-shadow: 0px 0px 8px #333333;
+	-webkit-box-shadow: 0px 0px 8px #333333;
+	box-shadow: 0px 0px 8px #333333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.copyright a
+{
+	color: #444444;
+}
+
+.copyright .slogan
+{
+	font-size: 80%;
+}
