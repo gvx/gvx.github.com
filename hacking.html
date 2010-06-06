@@ -11,7 +11,7 @@
 				| <a href="http://gvxdev.wordpress.com/">Blog</a>
 				| <a href="http://twitter.com/gvxdev">Twitter</a></p></div>
 		<div class="title">~/Hacking</div>
-		<div class="subtitle">A collection of bits</div>
+		<div class="subtitle" id="subtitle">A collection of bits</div>
 		<div class="project">
 			<p class="name"><a href="#dice" id="dice">#</a> dice <span class="status finished">done</span></p>
 			<p>
@@ -102,5 +102,11 @@
 		</div>
 		<div class="copyright">&copy;2010 <a title="gyvox.public@gmail.com" href="mailto:gyvox.public@gmail.com">Robin Wellner</a>. Some rights reserved.<br />
 		<span class="slogan">Possible side effects may include but are not limited to loss of limbs, sense of humor and keys.</span></div>
+		<script>
+			// A simple, non-intrusive JavaScript snippet that counts the projects on the page.
+			// If JavaScript is disabled, the subtitle simply remains “A collection of bits”.
+			projects = document.getElementsByClassName("project").length;
+			document.getElementById("subtitle").innerHTML = "A collection of ".concat(projects, " bits");
+		</script>
 	</body>
 </html>
