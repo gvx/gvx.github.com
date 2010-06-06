@@ -81,6 +81,25 @@
 				A self-playing strategy game, which first generates the island on which it all takes place, and next simulates six empires as they expand. Currently has a nasty bug which seems impossible to figure out.
 			</p>
 		</div>
+		<div class="project">
+			<p class="name"><a href="#lcalc" id="lcalc">#</a> lCalc <span class="status finished">done</span></p>
+			<p>
+				A calculator using wxLua, which evaluates Lua expressions and statements. Stable and useful. <code>= 5</code> is short for <code>return 5</code>
+				and <code>:a 6</code> is short for <code>return set(6,"a")</code>, which is a different way of saying <code>a = 6 ; return a</code>.
+			</p>
+			<p>
+				The result of the previous calculation is stored in <code>_</code>, and a list of all history is kept in a table called <code>hist</code>, such that
+				<code>hist[1] == _</code> and <code>hist[#hist]</code> is the first calculation executed.
+			</p>
+			<p>
+				Previous expressions can be reached by using Ctrl+Up and Ctrl+Down.
+			</p>
+			<p>
+				Results are shown on a white background, if the result is <code>nil</code>,
+				the background is gray, and if there was an error, the error is shown on a
+				red background.
+			</p>
+		</div>
 		<div class="copyright">&copy;2010 <a title="gyvox.public@gmail.com" href="mailto:gyvox.public@gmail.com">Robin Wellner</a>. Some rights reserved.<br />
 		<span class="slogan">Possible side effects may include but are not limited to loss of limbs, sense of humor and keys.</span></div>
 	</body>
