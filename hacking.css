@@ -72,6 +72,11 @@ body
 	margin-left: 2em;
 }
 
+.more:before
+{
+	content: 'More: ';
+}
+
 .project .more a
 {
 	text-decoration: none;
