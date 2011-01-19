@@ -9,7 +9,9 @@
 		<div class="nav"><b>Places</b> | <a href="index.html">Userpage</a>
 				| <a href="http://github.com/gvx/">GitHub</a>
 				| <a href="http://gvxdev.wordpress.com/">Blog</a>
-				| <a href="http://twitter.com/gvxdev">Twitter</a></div>
+				| <a href="http://twitter.com/gvxdev">Twitter</a>
+				<noscript>| This page is tastier with JavaScript enabled.</noscript>
+		</div>
 		<div class="title">~/Hacking</div>
 		<div class="subtitle" id="subtitle">A collection of bits</div>
 		<div id="projects">
@@ -196,6 +198,15 @@
 				var x = projects[i];
 				prjdiv.removeChild(x);
 				prjdiv.insertBefore(x, projects[Math.floor(Math.random()*(projectn-1))])
+			}
+			
+			for (i = 0; i < projectn; i++) {
+				if (projects[i].children[projects[i].children.length - 1].className != 'more') {
+					p = document.createElement('p')
+					p.className = "more"
+					p.innerHTML = 'Request <a href="mailto:gyvox.public@gmail.com?subject=download%20link">download link</a>.'
+					projects[i].appendChild(p)
+				}
 			}
 		</script>
 	</body>
