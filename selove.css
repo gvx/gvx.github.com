@@ -1,0 +1,84 @@
+body
+{
+	background-color: #b7bfff;
+	color: #000000;
+	font-family: monospace;
+}
+
+.nav
+{
+	font-size: small;
+	background-color: /* #9f9f9f; I like this, but it is too dark */  #cfcfcf;
+	                  /* which causes people to miss the header   */
+	padding: 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.nav a
+{
+	font-weight: bold;
+	color: #00af00;
+}
+
+header
+{
+	/*background-color: #e0e0ff;*/
+	padding: 4px;
+	margin-top: 1em;
+}
+
+header h1
+{
+	margin-bottom: 0em;
+	margin-top: 0em;
+}
+
+header p
+{
+	font-size: small;
+	margin: 0em;
+	padding: 0em;
+	font-style: italic;
+}
+
+section h1
+{
+	margin-bottom: 0em;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left: 1em;
+	margin-left: 0em;
+	padding-top: 0em;
+	margin-top: 0em;
+}
+
+ul li:before
+{
+	content: "* ";
+}
+
+.copyright
+{
+	margin-top: 7em;
+}
+
+.copyright span
+{
+	border-style: solid;
+	border-width: .5em;
+	padding: 1em;
+	margin: 1em;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.copyright a
+{
+	color: #000000;
+}
+
