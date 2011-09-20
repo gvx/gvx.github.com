@@ -238,7 +238,7 @@
 				if (projects[i].children[projects[i].children.length - 1].className != 'more') {
 					p = document.createElement('p')
 					p.className = "more"
-					p.innerHTML = 'Request <a href="mailto:gyvox.public@gmail.com?subject=download%20link%20for%20'.concat(projects[i].children[0].children[0].id, '">download link</a>.')
+					p.innerHTML = '<a href="mailto:gyvox.public@gmail.com?subject=download%20link%20for%20'.concat(projects[i].children[0].children[0].id, '">Request download link</a>.')
 					projects[i].appendChild(p)
 				}
 			}
