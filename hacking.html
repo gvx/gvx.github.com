@@ -6,7 +6,7 @@
 		<link href="hacking.css" media="screen" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="favicon.png"/>
 	</head>
-	<body>
+	<body><div id="shuffle"></div>
 		<div class="nav"><b>Places</b> | <a href="index.html">Userpage</a>
 				| <a href="http://github.com/gvx/">GitHub</a>
 				| <a href="http://gvxdev.wordpress.com/">Blog</a>
@@ -226,17 +226,25 @@
 			// A simple, non-intrusive JavaScript snippet that counts the projects on the page.
 			// If JavaScript is disabled, the subtitle simply remains “A collection of bits”.
 			var projects = document.getElementsByClassName("project");
-			projectn = projects.length;
+			var projectn = projects.length;
 			var prjdiv = document.getElementById("projects");
 
 			document.getElementById("subtitle").innerHTML = "A collection of ".concat(projectn, " bits");
 
-			for (i = projectn - 1; i >= 0; i-- ) {
-				var x = projects[i];
-				prjdiv.removeChild(x);
-				prjdiv.insertBefore(x, projects[Math.floor(Math.random()*(projectn-1))])
+			function randomSort()
+			{
+				for (i = projectn - 1; i >= 0; i-- )
+				{
+					var x = projects[i]
+					prjdiv.removeChild(x)
+					prjdiv.insertBefore(x, projects[Math.floor(Math.random()*(projectn-1))])
+				}
 			}
 			
+			randomSort()
+			
+			document.getElementById("shuffle").innerHTML = '<p><a href="javascript:randomSort()">⇅</a></p>'
+
 			for (i = 0; i < projectn; i++) {
 				if (projects[i].children[projects[i].children.length - 1].className != 'more') {
 					p = document.createElement('p')

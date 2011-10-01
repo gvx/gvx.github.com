@@ -34,6 +34,24 @@ body
 	color: #505050;
 }
 
+#shuffle
+{
+	float: right;
+	font-size: 200%
+}
+
+#shuffle a
+{
+	color: #1818ff;
+	text-decoration: none;
+}
+
+#shuffle a:hover
+{
+	color: #a8a8ff;
+}
+
+
 .project
 {
 	margin: 3em;
